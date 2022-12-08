@@ -1,0 +1,101 @@
+:root {
+   --clr-dustyRose: #eed6d3;
+   --clr-coffeePot: #a49393;
+   --clr-coffeePot2: #67595e;
+   --main-clr: #292A2B;
+}
+
+
+body {
+   background-image: url(../img/mountain.jpg);
+   background-position: center center;
+   background-size: cover;
+   font-family: 'Cairo', sans-serif;
+   letter-spacing: 2px;
+}
+
+.item::after {
+   content: "";
+   position: absolute;
+   background-color: rgb(58, 58, 58);
+   height: 1px;
+   width: 80%;
+   bottom: 0;
+   left: 10%;
+   transform: translateY(12px);
+}
+
+.wrapper {
+   background-color: rgba(0, 0, 0, .5);
+   min-height: 100vh;
+
+}
+
+.container {
+   min-height: 100vh;
+}
+
+#condation {
+   letter-spacing: 2px;
+}
+
+.box-form {
+   background: rgba(255, 255, 255, 0.2) !important;
+   box-shadow: 0 8px 32px 0 rgba(27, 27, 29, 0.74) !important;
+   backdrop-filter: blur(2px) !important;
+   -webkit-backdrop-filter: blur(8px) !important;
+   border-radius: 10px !important;
+   border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+i {
+   font-size: 100px;
+   color: #f3f3f3;
+
+}
+
+input {
+   border: solid 1px rgba(255, 255, 255, 0.5) !important;
+   background-color: rgba(255, 255, 255, 0.2) !important;
+   color: rgb(51, 51, 51) !important;
+   outline: none !important;
+}
+
+input::placeholder {
+
+   color: rgba(255, 255, 255, 0.8) !important;
+}
+
+input:focus {
+   outline: none !important;
+   box-shadow: 0 0 10px #719ECE;
+}
+
+#moreData {
+   cursor: pointer;
+}
+
+.daysInfo span {
+   color: beige;
+}
+
+.daysInfo sup {
+   text-shadow: none;
+   color: rgb(255, 255, 255);
+}
+
+i {
+   cursor: pointer;
+}
+
+.main-clr {
+   color: var(--main-clr);
+}
+
+/* --clr-dustyRose: #eed6d3;
+--clr-coffeePot: #a49393;
+--clr-coffeePot2: #67595e; */
+
+.dustyRose {
+   color: var(--clr-dustyRose);
+}
