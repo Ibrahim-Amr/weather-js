@@ -1,6 +1,6 @@
 let countryName = document.getElementById('countryName');
 async function getData(country) {
-	let myData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=126ae1a70bce493da46163733221910&q=${country}&days=3`);
+	let myData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=4667bab88c9d4a74a21172043232601&q=${country}&days=3`);
 	if (myData.ok && myData.status != 400) {
 		finalData = await myData.json();
 		displayForecast(finalData.forecast.forecastday);
